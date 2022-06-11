@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task2a {
-    // тази е направена с do-while
     public static void playGame() {
         Random number=new Random();
         Scanner sc=new Scanner(System.in);
@@ -10,6 +9,7 @@ public class Task2a {
         int tryCount=0;
         int playerGuess;
         System.out.println("Guess the number(1-20)!");
+
         do {
             playerGuess= sc.nextInt();
             tryCount++;

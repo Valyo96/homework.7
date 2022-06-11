@@ -8,6 +8,7 @@ public class Task3 {
         int numCycle = userNumber-1;
         int sumDividers = 0;
         int divider = 1;
+
         while (numCycle != 0) {
             if (userNumber%divider==0) {
                 sumDividers+=divider;
@@ -15,6 +16,7 @@ public class Task3 {
             numCycle--;
             divider++;
         }
+
         if (sumDividers==userNumber) {
             System.out.println("Your number "+userNumber+" is perfect!");
         }

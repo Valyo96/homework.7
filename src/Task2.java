@@ -2,7 +2,6 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Task2 {
-    //тази е нарпавена само с while
     public static void playGame() {
        Random number=new Random();
        Scanner sc=new Scanner(System.in);
@@ -10,9 +9,11 @@ public class Task2 {
        int tryCount=0;
         int playerGuess=0;
         System.out.println("Guess the number(1-20)!");
+
        while (playerGuess!=rNumber) {
            playerGuess= sc.nextInt();
            tryCount++;
+
            if (rNumber == playerGuess) {
                System.out.println("You guessed right, " + playerGuess + " is the correct number!");
                System.out.println("It took you "+tryCount+" tries!");

@@ -6,6 +6,7 @@ public class Task1 {
         int nmPlayers;
         System.out.println("Enter the desired sport (football , basketball,volleyball)");
         String desiredSport= sc.next();
+
         if (desiredSport.equals("football")||desiredSport.equals("basketball")||desiredSport.equals("volleyball")) {
             if (desiredSport.equals("football")) {
                 nmPlayers = 11;
